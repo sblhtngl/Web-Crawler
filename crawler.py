@@ -41,7 +41,7 @@ def crawl_and_save(start_url, output_file, max_links=50):
 
     print(f"{len(found_links)} bağlantı {output_file} dosyasına kaydedildi.")
 
-user_input = input("Başlangıç URL'sini girin (örn: example.com): ").strip()
+user_input = input("URL' GİRİN: ").strip()
 
 if not user_input.startswith("http://") and not user_input.startswith("https://"):
     user_input = "http://" + user_input
